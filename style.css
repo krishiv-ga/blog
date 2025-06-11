@@ -1,5 +1,8 @@
-/* style.css */
 
+
+/* =====================================================
+   BASE STYLES
+===================================================== */
 body {
   margin: 0;
   padding: 0;
@@ -15,33 +18,8 @@ a {
 }
 
 a:hover {
-  color: #34d399; /* green highlight on hover */
+  color: #34d399;
   text-decoration: underline;
-}
-
-header, footer {
-  background-color: #121212;
-  padding: 1rem 2rem;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-}
-
-nav a {
-  font-weight: bold;
-}
-
-main {
-  padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 h1, h2, h3 {
@@ -62,14 +40,120 @@ button:hover {
   color: #0f0f0f;
 }
 
-/* Center-align container with side spacing */
+
+/* =====================================================
+   LAYOUT & CONTAINERS
+===================================================== */
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 1.5rem; /* space on sides for mobile */
+  padding: 0 1.5rem;
   text-align: center;
 }
 
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #121212;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+
+/* =====================================================
+   HEADER & NAVIGATION (index.html)
+===================================================== */
+header {
+  background-color: #121212;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+
+/* =====================================================
+   HOMEPAGE (index.html)
+===================================================== */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: #34d399;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.cta-buttons .button {
+  margin: 0.4rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-preview p,
+.projects-preview p,
+.resume-preview p,
+.resume-preview ul {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.resume-preview ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.resume-preview li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* =====================================================
+   BLOG PAGE (blog.html)
+===================================================== */
 .post-preview {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -86,6 +170,25 @@ button:hover {
   color: #888;
 }
 
+#searchInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 2rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+#searchInput::placeholder {
+  color: #888;
+}
+
+
+/* =====================================================
+   PROJECTS PAGE (projects.html)
+===================================================== */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -117,8 +220,8 @@ button:hover {
 }
 
 .project-card p {
-  font-size: 0.95rem;
-  color: #ccc;
+  font-size: 0.9rem;
+  color: #bbb;
 }
 
 .project-card a {
@@ -128,165 +231,6 @@ button:hover {
   font-weight: bold;
 }
 
-.resume h1 {
-  margin-bottom: 0.2rem;
-}
-
-.resume h2 {
-  margin-top: 2rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.3rem;
-}
-
-.resume ul {
-  padding-left: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-.resume p, .resume li {
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-.resume ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.resume li {
-  margin-bottom: 0.5rem;
-}
-
-/* Hero Section */
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero .tagline {
-  font-size: 1.2rem;
-  color: #34d399;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  max-width: 600px;
-  margin: 0 auto 1.5rem auto;
-  font-size: 1rem;
-  color: #ddd;
-}
-
-/* Call-to-action buttons inside Hero */
-.cta-buttons .button {
-  margin: 0.4rem;
-}
-
-/* Section titles and spacing */
-section {
-  margin-top: 3rem;
-}
-
-section h2 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-/* About Section */
-.about p {
-  font-size: 1rem;
-  color: #ccc;
-  line-height: 1.6;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* Blog Preview Placeholder */
-.blog-preview p,
-.projects-preview p,
-.resume-preview p,
-.resume-preview ul {
-  color: #bbb;
-  font-size: 0.95rem;
-}
-
-/* Resume Preview List */
-.resume-preview ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: center;
-}
-
-.resume-preview li {
-  margin-bottom: 0.5rem;
-}
-
-/* Footer spacing */
-footer {
-  margin-top: 4rem;
-}
-
-#post-content h1, h2, h3 {
-  color: #ffffff;
-}
-
-#post-content p {
-  color: #ddd;
-  margin-bottom: 1rem;
-  line-height: 1.6;
-}
-
-.project-card-link {
-  text-decoration: none;
-  color: inherit;
-}
-.project-card-link:hover .project-card {
-  transform: translateY(-5px);
-}
-
-.markdown {
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.markdown h1, .markdown h2, .markdown h3 {
-  margin-top: 2rem;
-  color: #ffffff;
-}
-
-.markdown p {
-  color: #ddd;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.post-meta {
-  font-size: 0.85rem;
-  color: #888;
-  margin-bottom: 0.5rem;
-}
-
-#searchInput {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  margin: 1rem 0 2rem;
-  border-radius: 6px;
-  border: none;
-  background-color: #1c1c1c;
-  color: #f5f5f5;
-  font-size: 1rem;
-}
-#searchInput::placeholder {
-  color: #888;
-}
-
-.project-card p {
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
 .project-card-link {
   text-decoration: none;
   color: inherit;
@@ -296,60 +240,10 @@ footer {
   transform: translateY(-5px);
 }
 
-/* Resume Section Formatting */
-.resume h1 {
-  margin-bottom: 0.5rem;
-}
 
-.resume h2 {
-  margin-top: 2.5rem;
-  font-size: 1.4rem;
-  border-bottom: 1px solid #444;
-  padding-bottom: 0.3rem;
-}
-
-.resume .section {
-  margin-bottom: 2rem;
-  text-align: left;
-}
-
-.resume .job {
-  margin-top: 1.5rem;
-}
-
-.resume .job-title {
-  font-weight: 600;
-}
-
-.resume .job-subtitle {
-  font-style: italic;
-  font-size: 0.9rem;
-  color: #aaa;
-  margin-bottom: 0.3rem;
-}
-
-.resume .job-details {
-  list-style: none;           /* REMOVE BULLETS */
-  padding-left: 0;            /* REMOVE LEFT INDENT */
-  margin-top: 0.5rem;
-}
-
-.resume .job-details li {
-  margin-bottom: 0.4rem;
-  font-size: 0.95rem;
-  color: #ccc;
-  position: relative;
-  padding-left: 1.2rem;
-}
-
-.resume .job-details li::before {
-  content: "–";               /* OPTIONAL: dash instead of dot */
-  position: absolute;
-  left: 0;
-  color: #34d399;
-}
-
-/* Resume Theme Styles */
+/* =====================================================
+   RESUME PAGE (resume.html)
+===================================================== */
 .resume {
   text-align: left;
   color: #f5f5f5;
@@ -360,6 +254,14 @@ footer {
   margin-bottom: 0.2rem;
 }
 
+.resume h2 {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
 .resume p, .resume a {
   font-size: 1rem;
   color: #ccc;
@@ -367,14 +269,6 @@ footer {
 
 .resume a:hover {
   color: #1a73e8;
-}
-
-.resume h2 {
-  color: #1a73e8;
-  border-bottom: 2px solid #1a73e8;
-  padding-bottom: 0.4rem;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
 }
 
 .resume-section {
@@ -408,4 +302,35 @@ footer {
   font-style: italic;
   color: #888;
   float: right;
+}
+
+
+/* =====================================================
+   BLOG POST VIEWER (post.html)
+===================================================== */
+#post-content h1, #post-content h2, #post-content h3 {
+  color: #ffffff;
+}
+
+#post-content p {
+  color: #ddd;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.markdown {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+.markdown p {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
