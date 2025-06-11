@@ -2,6 +2,8 @@
 
 *Published: 2021-09-06*
 
+Note: This article contains images. Due to a bug with GitHub markdown image pathing, images are currently not supported. Sorry for the inconvienence.  
+
 The Austrian School of Economics is a group of Economists that believe in laissez-faire capitalism. They have a business cycle theory which is called the Austrian Business Cycle theory. Before we get into the topic at hand, we need to preface this idea by understanding what business cycles are.
 
 A business cycle is an economic theory which attempts to explain the patterns of economic growth and recession in an economy. The Austrian business cycle theory says that the periodic recessions and booms are due to the government interfering with the rate of interest. It says that the rate of interest is the ‘coordinating function between time and investments’ which is just big words for, it is a way to tell what kind of investments entrepreneurs and investors should make.
@@ -15,7 +17,7 @@ The rate of interest also relates to lending and monetary policy, artificially l
 Not only does this malinvestment lead to wrong investment that no one wants, it leads to incredible wastage of resources, which leads to the economy being of much lower value than it appears. And when the markets readjust, usually after an irregular phenomenon or such, the number line comes crashing down, and so does the world economy. 
 
 
-![Austrian Business Cycle Theory Graph](/Assets/austrian_business_cycle_theory_graph.png "Austrian Business Cycle Theory")
+![Austrian Business Cycle Theory Graph](Assets/austrian_business_cycle_theory_graph.png "Austrian Business Cycle Theory")
 
 There are many criticisms of this theory, especially from the Keynesian school of economics. One of the most boldest, and one of the most illogical claims by this school of economics is that this business cycle theory is not empirical (this usually comes from the notion that austrians aren’t empiricists or realists because they don’t use incredibly generalised ‘empirical’ aggregates to calculate large scale economic data  and ‘verify’ their theories). This has been disproven by one of the most loved figures in libertarian politics, Ron Paul himself: https://www.youtube.com/watch?v=wMAM1_96GSc
 
