@@ -69,3 +69,19 @@ button:hover {
   padding: 0 1.5rem; /* space on sides for mobile */
   text-align: center;
 }
+
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.post-preview h2 {
+  margin-bottom: 0.3rem;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #888;
+}
