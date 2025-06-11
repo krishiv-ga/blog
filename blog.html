@@ -18,40 +18,55 @@
     </nav>
   </header>
 
-<main>
-<div class="container">
-    <h1>Blog Posts</h1>
-    <div id="blog-grid" class="project-grid"></div>
-</div>
-</main>
+    <main>
+    <div class="container">
+        <h1>Blog Posts</h1>
+        <input type="text" id="searchInput" placeholder="Search posts..." />
+        <div id="blog-grid" class="project-grid"></div>
+    </div>
+    </main>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 <script>
+  let allPosts = [];
+
   fetch('Blogs/posts.json')
     .then(response => response.json())
     .then(posts => {
-      const container = document.getElementById("blog-grid");
-
-      // Sort by most recent date
-      posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-      posts.forEach(post => {
-        const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
-          year: 'numeric', month: 'short', day: 'numeric'
-        });
-
-        const card = `
-          <a href="post.html?file=${post.filename}" class="project-card-link">
-            <div class="project-card">
-              <img src="${post.image}" alt="${post.title}">
-              <p class="post-meta">${formattedDate}</p>
-              <h2>${post.title}</h2>
-            </div>
-          </a>`;
-        container.innerHTML += card;
-      });
+      allPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+      renderPosts(allPosts);
     });
+
+  function renderPosts(posts) {
+    const container = document.getElementById("blog-grid");
+    container.innerHTML = "";
+
+    posts.forEach(post => {
+      const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
+        year: 'numeric', month: 'short', day: 'numeric'
+      });
+
+      const card = `
+        <a href="post.html?file=${post.filename}" class="project-card-link">
+          <div class="project-card">
+            <img src="${post.image}" alt="${post.title}">
+            <p class="post-meta">${formattedDate}</p>
+            <h2>${post.title}</h2>
+          </div>
+        </a>`;
+      container.innerHTML += card;
+    });
+  }
+
+  document.getElementById("searchInput").addEventListener("input", (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = allPosts.filter(post =>
+      post.title.toLowerCase().includes(query)
+    );
+    renderPosts(filtered);
+  });
 </script>
+
 
   <footer>
     <p>&copy; 2025 Your Name. All rights reserved.</p>
