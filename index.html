@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<!-- Loading Featured Projects and Recent Blogs-->
- <script>
-  // FEATURED PROJECTS
+<script>
+  // === FEATURED PROJECTS ===
   fetch("Projects/projects.json")
     .then(res => res.json())
     .then(projects => {
@@ -19,19 +18,24 @@
         .slice(0, 3);
 
       const container = document.getElementById("featured-projects-grid");
-      featured.forEach(p => {
+
+      featured.forEach(project => {
+        const tagHTML = (project.tags || []).map(tag =>
+          `<span class="tag tag-${tag}">${tag}</span>`).join("");
+
         container.innerHTML += `
-          <a href="${p.link}" class="project-card-link" target="_blank">
+          <a href="${project.link}" class="project-card-link" target="_blank">
             <div class="project-card">
-              <img src="${p.image}" alt="${p.title}">
-              <h2>${p.title}</h2>
-              <p>${p.subtitle}</p>
+              <img src="${project.image}" alt="${project.title}">
+              <h2>${project.title}</h2>
+              <p>${project.subtitle}</p>
+              <div class="tag-container">${tagHTML}</div>
             </div>
           </a>`;
       });
     });
 
-  // LATEST POSTS
+  // === LATEST BLOG POSTS ===
   fetch("Blogs/posts.json")
     .then(res => res.json())
     .then(posts => {
@@ -40,17 +44,22 @@
         .slice(0, 3);
 
       const container = document.getElementById("latest-posts-grid");
-      latest.forEach(p => {
-        const formattedDate = new Date(p.date).toLocaleDateString("en-US", {
+
+      latest.forEach(post => {
+        const formattedDate = new Date(post.date).toLocaleDateString("en-US", {
           year: "numeric", month: "short", day: "numeric"
         });
 
+        const tagHTML = (post.tags || []).map(tag =>
+          `<span class="tag tag-${tag}">${tag}</span>`).join("");
+
         container.innerHTML += `
-          <a href="post.html?file=${p.filename}" class="project-card-link">
+          <a href="post.html?file=${post.filename}" class="project-card-link">
             <div class="project-card">
-              <img src="${p.image}" alt="${p.title}">
+              <img src="${post.image}" alt="${post.title}">
               <p class="post-meta">${formattedDate}</p>
-              <h2>${p.title}</h2>
+              <h2>${post.title}</h2>
+              <div class="tag-container">${tagHTML}</div>
             </div>
           </a>`;
       });
@@ -108,23 +117,40 @@
   <div id="latest-posts-grid" class="project-grid"></div>
 </section>
 
-      <!-- 5. Resume Snapshot (Placeholder) -->
-      <section class="resume-preview">
-        <h2>Resume Highlights</h2>
-        <ul>
-          <li>Python, Excel, Financial Modeling</li>
-          <li>Internships at KPMG, ValleyNXT Ventures, Motilal Oswal</li>
-          <li>Co-author of Amazon bestselling startup book</li>
-        </ul>
-        <a href="resume.html" class="button">See Full Resume</a>
-      </section>
-
+      <!-- 5. Resume Snapshot -->
+<section id="resume-snapshot">
+  <h2 class="resume-heading">Resume Snapshot</h2>
+  <div class="resume-card-stack">
+    <div class="project-card">
+      <h2>Education</h2>
+      <p><strong>Mahindra University</strong> – B.A. Econ & Finance (2022–2025)</p>
+      <p><strong>Alliance World School</strong> – A Levels (2020–2022)</p>
     </div>
-  </main>
+
+    <div class="project-card">
+      <h2>Experience</h2>
+      <p>KPMG India – Intern (2025)</p>
+      <p>ValleyNXT Ventures – VC Intern (2023–2024)</p>
+      <p>Motilal Oswal – Wealth & Equity Research (2022–2023)</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Skills & Certs</h2>
+      <p><strong>Python</strong>, <strong>Excel</strong>, <strong>R</strong>, Prompt Engineering</p>
+      <p>NSE | FIA | IIT Guwahati | U of Minnesota</p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 1.5rem;">
+    <a href="resume.html" class="button">View Full Resume</a>
+  </div>
+</section>
+
 
   <!-- 6. Footer -->
   <footer>
     <p>&copy; 2025 Krishiv Agarwal. Built with HTML, CSS, and a love for models.</p>
   </footer>
 </body>
+
 </html>

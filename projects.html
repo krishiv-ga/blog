@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- === HEADER === -->
   <header>
     <nav>
       <ul>
@@ -18,35 +20,50 @@
     </nav>
   </header>
 
-<main>
-  <div class="container">
-    <h1>Projects</h1>
-    <div id="projects-grid" class="project-grid"></div>
-  </div>
-</main>
+  <!-- === MAIN CONTENT === -->
+  <main>
+    <div class="container">
+      <h1>Projects</h1>
+      <div id="projects-grid" class="project-grid"></div>
+    </div>
+  </main>
 
-<script>
-  fetch('Projects/projects.json')
-    .then(response => response.json())
-    .then(projects => {
-      const container = document.getElementById("projects-grid");
-      projects.forEach(project => {
-        const card = `
-          <a href="${project.link}" target="_blank" class="project-card-link">
-            <div class="project-card">
-              <img src="${project.image}" alt="${project.title}">
-              <h2>${project.title}</h2>
-              <p>${project.subtitle}</p>
-            </div>
-          </a>`;
-        container.innerHTML += card;
+  <!-- === JS SCRIPT TO LOAD PROJECTS === -->
+  <script>
+    fetch('Projects/projects.json')
+      .then(response => response.json())
+      .then(projects => {
+        const container = document.getElementById("projects-grid");
+
+        projects.forEach(project => {
+          const tagHTML = (project.tags || []).map(tag =>
+            `<span class="tag tag-${tag.toLowerCase()}">${tag}</span>`
+          ).join("");
+
+          const card = `
+            <a href="${project.link}" class="project-card-link" target="_blank">
+              <div class="project-card">
+                <img src="${project.image}" alt="${project.title}">
+                <h2>${project.title}</h2>
+                <p>${project.subtitle}</p>
+                <div class="tag-container">${tagHTML}</div>
+              </div>
+            </a>
+          `;
+
+          container.innerHTML += card;
+        });
+      })
+      .catch(error => {
+        console.error("Failed to load projects.json:", error);
+        document.getElementById("projects-grid").innerHTML = "<p>Error loading projects.</p>";
       });
-    });
-</script>
+  </script>
 
-
+  <!-- === FOOTER === -->
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Krishiv Agarwal. All rights reserved.</p>
   </footer>
+
 </body>
 </html>

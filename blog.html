@@ -42,17 +42,20 @@
     container.innerHTML = "";
 
     posts.forEach(post => {
+        const tagHTML = (post.tags || []).map(tag =>
+  `<span class="tag tag-${tag}">${tag}</span>`).join("");
       const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
         year: 'numeric', month: 'short', day: 'numeric'
       });
 
       const card = `
         <a href="post.html?file=${post.filename}" class="project-card-link">
-          <div class="project-card">
-            <img src="${post.image}" alt="${post.title}">
-            <p class="post-meta">${formattedDate}</p>
-            <h2>${post.title}</h2>
-          </div>
+            <div class="project-card">
+  <img src="${post.image}" alt="${post.title}">
+  <p class="post-meta">${formattedDate}</p>
+  <h2>${post.title}</h2>
+  <div class="tag-container">${tagHTML}</div>
+</div>
         </a>`;
       container.innerHTML += card;
     });
