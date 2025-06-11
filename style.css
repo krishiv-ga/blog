@@ -226,3 +226,44 @@ section h2 {
 footer {
   margin-top: 4rem;
 }
+
+#post-content h1, h2, h3 {
+  color: #ffffff;
+}
+
+#post-content p {
+  color: #ddd;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+.project-card-link:hover .project-card {
+  transform: translateY(-5px);
+}
+
+.markdown {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+.markdown p {
+  color: #ddd;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}

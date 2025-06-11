@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="post-content" class="markdown"></div>
+</div>
+
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const file = urlParams.get("file");
+
+    fetch(`Blogs/${file}`)
+      .then(res => res.text())
+      .then(md => {
+        document.getElementById("post-content").innerHTML = marked.parse(md);
+      })
+      .catch(err => {
+        document.getElementById("post-content").innerHTML = "Post not found.";
+      });
+  </script>
+</body>
+</html>
