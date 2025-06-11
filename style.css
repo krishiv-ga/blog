@@ -264,13 +264,14 @@ nav a {
   margin-top: 2rem;
 }
 
-.project-card {
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease;
+
+.project-card img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 1rem;
 }
 
 .project-card:hover {
@@ -330,6 +331,30 @@ nav a {
 .tag-risk { background-color: #8e44ad; }
 .tag-data { background-color: #3498db; }
 .tag-optimization { background-color: #e67e22; }
+
+#projectSearchInput {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 2rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+#projectSearchInput::placeholder {
+  color: #888;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
 
 
 /* =====================================================
@@ -425,3 +450,169 @@ nav a {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
+
+
+/* Project Card fixes */
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+  height: 440px; /* Fixed height for uniform cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.2rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.project-card {
+  width: 300px;
+  height: 430px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.tag-container {
+  margin-top: auto;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+.project-card {
+  width: 300px;
+  height: 430px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+}
+
+.project-card h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.tag-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+#blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 960px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === BLOG TAG COLORS === */
+
+.tag-fiction       { background-color: #6c5ce7; color: #fff; }   /* Purple */
+.tag-writing       { background-color: #2d3436; color: #fff; }   /* Dark Gray */
+.tag-classical-music { background-color: #fab1a0; color: #000; } /* Peach */
+.tag-educational   { background-color: #00cec9; color: #000; }   /* Aqua */
+.tag-notes         { background-color: #636e72; color: #fff; }   /* Gray */
+.tag-economics     { background-color: #0984e3; color: #fff; }   /* Blue */
+.tag-theory        { background-color: #fdcb6e; color: #000; }   /* Yellow */
+.tag-history       { background-color: #b2bec3; color: #000; }   /* Light Gray */
+.tag-politics      { background-color: #d63031; color: #fff; }   /* Red */
+.tag-opinion       { background-color: #ffeaa7; color: #000; }   /* Light Yellow */
+.tag-tech          { background-color: #00b894; color: #fff; }   /* Teal */
+.tag-business      { background-color: #e17055; color: #fff; }   /* Orange */
+.tag-report        { background-color: #6c757d; color: #fff; }   /* Slate */
+.tag-finance       { background-color: #1e3799; color: #fff; }   /* Navy */

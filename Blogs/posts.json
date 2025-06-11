@@ -1,16 +1,175 @@
 [
   {
-    "title": "Backtesting Basics",
-    "filename": "backtesting.md",
+    "title": "Damned",
+    "filename": "damned.md",
     "image": "https://placehold.co/300x180",
-    "date": "2025-06-10",
-    "tags": ["quant", "tutorial"]
+    "date": "2020-02-21",
+    "tags": [
+      "fiction",
+      "writing"
+    ]
   },
   {
-    "title": "Risk Parity Explained",
-    "filename": "risk-parity.md",
+    "title": "Adriel",
+    "filename": "adriel.md",
     "image": "https://placehold.co/300x180",
-    "date": "2025-06-01",
-    "tags": ["quant", "theory"]
+    "date": "2020-02-21",
+    "tags": [
+      "fiction",
+      "writing"
+    ]
+  },
+  {
+    "title": "My new favourite piece.",
+    "filename": "my-new-favourite-piece.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2020-02-23",
+    "tags": [
+      "classical music",
+      "opinion"
+    ]
+  },
+  {
+    "title": "The blue reaping",
+    "filename": "the-blue-reaping.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2020-03-17",
+    "tags": [
+      "fiction",
+      "writing"
+    ]
+  },
+  {
+    "title": "The Hue of A Beach",
+    "filename": "the-hue-of-a-beach.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-04-18",
+    "tags": [
+      "fiction",
+      "writing"]
+  },
+  {
+    "title": "Notes on \"How to Escape Education's Death Valley\"",
+    "filename": "notes-on-how-to-escape-educations-death-valley.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-04-18",
+    "tags": [
+      "educational",
+      "notes"
+    ]
+  },
+  {
+    "title": "Russian Roulette",
+    "filename": "russian-roulette.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-04-18",
+    "tags": [
+      "fiction",
+      "writing"    ]
+  },
+  {
+    "title": "A Delivery in Knox",
+    "filename": "a-delivery-in-knox.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-04-18",
+    "tags": [
+      "fiction",
+      "writing"    ]
+  },
+  {
+    "title": "A Christmas Hunt",
+    "filename": "a-christmas-hunt.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-04-18",
+    "tags": [
+      "fiction",
+      "writing"    ]
+  },
+  {
+    "title": "A passion to kill",
+    "filename": "a-passion-to-kill.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-05-22",
+    "tags": [      "fiction",
+      "writing"
+    ]
+  },
+  {
+    "title": "Austrian business cycle theory - An introduction",
+    "filename": "austrian-business-cycle-theory---an-introduction.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-09-06",
+    "tags": [
+      "economics",
+      "theory"
+    ]
+  },
+  {
+    "title": "A short history of the Austrian School of Economics",
+    "filename": "a-short-history-of-the-austrian-school-of-economics.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-09-17",
+    "tags": [
+            "economics",
+      "history"
+    ]
+  },
+  {
+    "title": "Rittenhouse - A sigh of relief for freedom",
+    "filename": "rittenhouse---a-sigh-of-relief-for-freedom.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2021-12-13",
+    "tags": [
+            "economics",
+      "politics"]
+  },
+  {
+    "title": "Why Microsoft has the home advantage in the battle for the 'Metaverse'",
+    "filename": "why-microsoft-has-the-home-advantage-in-the-battle-for-the-metaverse.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2022-03-13",
+    "tags": [
+      "opinion",
+      "tech"
+    ]
+  },
+  {
+    "title": "Ashneer Grover Vs BharatPe: PR Lessons for Startups",
+    "filename": "ashneer-grover-vs-bharatpe-pr-lessons-for-startups.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2022-04-09",
+    "tags": [
+      "opinion",
+      "business"
+    ]
+  },
+  {
+    "title": "Why brand building is important for startups",
+    "filename": "why-brand-building-is-important-for-startups.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2022-04-14",
+    "tags": [
+      "opinion",
+      "business"    ]
+  },
+  {
+    "title": "Inflation in the US: A Report",
+    "filename": "inflation-in-the-us-a-report.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2022-11-07",
+    "tags": [
+      "report",
+      "economics"
+    ]
+  },
+  {
+    "title": "Bonds and Yields to Maturity",
+    "filename": "bonds-and-yields-to-maturity.md",
+    "image": "https://placehold.co/300x180",
+    "date": "2023-07-20",
+    "tags": [
+      "finance",
+      "notes"
+    ]
   }
 ]
