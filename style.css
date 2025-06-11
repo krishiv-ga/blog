@@ -150,6 +150,32 @@ nav a {
   margin-bottom: 0.5rem;
 }
 
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 1rem 1rem 2rem;
+  border-left: 4px solid #1a73e8;
+  background-color: #121212;
+  border-radius: 6px;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+#featured-projects, #latest-posts {
+  margin-top: 4rem;
+}
+#featured-projects h2, #latest-posts h2 {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.3rem;
+}
+
 
 /* =====================================================
    BLOG PAGE (blog.html)

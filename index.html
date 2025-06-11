@@ -6,6 +6,58 @@
   <title>Krishiv Agarwal – Quant Finance Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
+<!-- Loading Featured Projects and Recent Blogs-->
+ <script>
+  // FEATURED PROJECTS
+  fetch("Projects/projects.json")
+    .then(res => res.json())
+    .then(projects => {
+      const featured = projects
+        .filter(p => p.starred)
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 3);
+
+      const container = document.getElementById("featured-projects-grid");
+      featured.forEach(p => {
+        container.innerHTML += `
+          <a href="${p.link}" class="project-card-link" target="_blank">
+            <div class="project-card">
+              <img src="${p.image}" alt="${p.title}">
+              <h2>${p.title}</h2>
+              <p>${p.subtitle}</p>
+            </div>
+          </a>`;
+      });
+    });
+
+  // LATEST POSTS
+  fetch("Blogs/posts.json")
+    .then(res => res.json())
+    .then(posts => {
+      const latest = posts
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .slice(0, 3);
+
+      const container = document.getElementById("latest-posts-grid");
+      latest.forEach(p => {
+        const formattedDate = new Date(p.date).toLocaleDateString("en-US", {
+          year: "numeric", month: "short", day: "numeric"
+        });
+
+        container.innerHTML += `
+          <a href="post.html?file=${p.filename}" class="project-card-link">
+            <div class="project-card">
+              <img src="${p.image}" alt="${p.title}">
+              <p class="post-meta">${formattedDate}</p>
+              <h2>${p.title}</h2>
+            </div>
+          </a>`;
+      });
+    });
+</script>
+
+
 <body>
   <header>
     <nav>
@@ -24,8 +76,8 @@
       <!-- 1. Hero Section -->
       <section class="hero">
         <h1>Krishiv Agarwal</h1>
-        <p class="tagline">Quantitative Finance | Data | Markets</p>
-        <p>Exploring markets through models. Writing about finance, building tools, and learning every day.</p>
+        <p class="tagline">Aspiring Quantitative Researcher</p>
+        <p>Learning to build sophisticated mathematical models to price, predict and apply financial products and theory.</p>
         <div class="cta-buttons">
           <a href="projects.html" class="button">Explore Projects</a>
           <a href="blog.html" class="button">Read Blog</a>
@@ -34,22 +86,27 @@
       </section>
 
       <!-- 2. About Me -->
-      <section class="about">
-        <h2>About Me</h2>
-        <p>I’m an undergraduate in Economics & Finance at Mahindra University, with a deep interest in quantitative finance, financial research, and data-driven problem solving. My work spans across equity research, venture capital, and public policy, and I enjoy building financial tools, simulations, and writing about theory and markets.</p>
-      </section>
+       <section class="about">
+  <h2>About Me</h2>
+  <p>
+    I’m a recent graduate in Economics and Finance with hands-on experience across venture capital, wealth management, and public-sector consulting. My academic training sharpened my analytical instincts, while my internships gave me a practical lens on how capital flows, markets behave, and financial systems operate.
+  </p>
+  <p>
+    I'm now focused on breaking into the world of quantitative finance, with a deep interest in automated investment strategies, statistical modeling, and computational finance. Whether it’s building smarter risk models or exploring market microstructure through code, I’m driven by curiosity and the belief that elegant math can power meaningful financial insight.
+  </p>
+</section>
 
-      <!-- 3. Featured Projects (Placeholder) -->
-      <section class="projects-preview">
-        <h2>Featured Projects</h2>
-        <p>Project previews will appear here once the system is connected.</p>
-      </section>
 
-      <!-- 4. Recent Blog Posts (Placeholder) -->
-      <section class="blog-preview">
-        <h2>Latest Posts</h2>
-        <p>Blog post previews will appear here once markdown integration is live.</p>
-      </section>
+      <!-- 3. Featured Projects  -->
+<section id="featured-projects">
+  <h2>Featured Projects</h2>
+  <div id="featured-projects-grid" class="project-grid"></div>
+</section>
+
+<section id="latest-posts">
+  <h2>Latest Posts</h2>
+  <div id="latest-posts-grid" class="project-grid"></div>
+</section>
 
       <!-- 5. Resume Snapshot (Placeholder) -->
       <section class="resume-preview">

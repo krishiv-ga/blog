@@ -1,20 +1,14 @@
 [
   {
-    "title": "The Power of Risk Parity",
+    "title": "Backtesting Basics",
+    "filename": "backtesting.md",
+    "image": "https://placehold.co/600x400",
+    "date": "2025-06-10"
+  },
+  {
+    "title": "Risk Parity Explained",
     "filename": "risk-parity.md",
-    "image": "https://via.placeholder.com/300x180?text=Coming+Soon",
+    "image": "https://placehold.co/600x400",
     "date": "2025-06-01"
-  },
-  {
-    "title": "Factor Investing 101",
-    "filename": "factor-investing.md",
-    "image": "https://via.placeholder.com/300x180?text=Coming+Soon",
-    "date": "2025-05-24"
-  },
-  {
-    "title": "Backtesting Basics for Quant Strategies",
-    "filename": "backtesting-basics.md",
-    "image": "https://via.placeholder.com/300x180?text=Coming+Soon",
-    "date": "2025-04-10"
   }
 ]
