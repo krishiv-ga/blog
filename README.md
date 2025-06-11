@@ -10,8 +10,6 @@ The site features:
 - 🔍 Searchable, filterable content
 - ⚡ Fast, responsive, and hosted via GitHub Pages
 
----
-
 ## 🚀 Features
 
 ### 🧠 Blog
@@ -33,7 +31,6 @@ The site features:
 - Snapshot version appears on homepage
 - LinkedIn + GitHub icons, styled links
 
----
 
 ## 📁 Folder Structure
 
@@ -50,7 +47,6 @@ The site features:
 └── README.md
 ````
 
----
 
 ## ✍️ How to Add New Content
 
@@ -94,7 +90,6 @@ Add to `style.css`:
 .tag-yourtag { background-color: #hexcode; color: #fff; }
 ```
 
----
 
 ## 🧪 Tech Stack
 
@@ -104,7 +99,6 @@ Add to `style.css`:
 * 🔍 Search via vanilla JS
 * 🌐 Hosted on GitHub Pages
 
----
 
 ## 🧠 Author
 
@@ -113,7 +107,6 @@ Economics + Finance | Quantitative Strategy | Python | Valuation
 [LinkedIn](https://www.linkedin.com/in/krishiv-agarwal-7026ab142/)
 [GitHub](https://github.com/YOUR_USERNAME)
 
----
 
 ## 📜 License
 
@@ -121,7 +114,6 @@ This project is for personal and educational use. Contact Krishiv directly for r
 
 ```
 
----
 
 Let me know if you'd like a version with:
 - A screenshot preview banner
