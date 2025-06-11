@@ -15,7 +15,7 @@ The rate of interest also relates to lending and monetary policy, artificially l
 Not only does this malinvestment lead to wrong investment that no one wants, it leads to incredible wastage of resources, which leads to the economy being of much lower value than it appears. And when the markets readjust, usually after an irregular phenomenon or such, the number line comes crashing down, and so does the world economy. 
 
 
-![Austrian Business Cycle Theory Graph](../Assets/austrian_business_cycle_theory_graph.png "Austrian Business Cycle Theory")
+![Austrian Business Cycle Theory Graph](Assets/austrian_business_cycle_theory_graph.png "Austrian Business Cycle Theory")
 
 There are many criticisms of this theory, especially from the Keynesian school of economics. One of the most boldest, and one of the most illogical claims by this school of economics is that this business cycle theory is not empirical (this usually comes from the notion that austrians aren’t empiricists or realists because they don’t use incredibly generalised ‘empirical’ aggregates to calculate large scale economic data  and ‘verify’ their theories). This has been disproven by one of the most loved figures in libertarian politics, Ron Paul himself: https://www.youtube.com/watch?v=wMAM1_96GSc
 
