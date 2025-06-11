@@ -616,3 +616,122 @@ nav a {
 .tag-business      { background-color: #e17055; color: #fff; }   /* Orange */
 .tag-report        { background-color: #6c757d; color: #fff; }   /* Slate */
 .tag-finance       { background-color: #1e3799; color: #fff; }   /* Navy */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.wide-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Responsive fallback */
+@media (max-width: 960px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.latest-posts-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.resume-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-card {
+  width: 300px;
+  height: 430px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.resume-heading {
+  text-align: center;
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .resume-card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.resume-card-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.project-card {
+  width: 300px;
+  height: 430px;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#resume-snapshot .project-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+#resume-snapshot .project-card {
+  height: auto;
+  min-height: 200px;
+  padding: 1rem 1.25rem;
+  max-width: 400px;
+}
+
+.resume-card-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem; /* reduced from 2rem */
+  margin-top: 2rem;
+}
+
+#resume-snapshot .project-card {
+  margin-bottom: 0;
+}

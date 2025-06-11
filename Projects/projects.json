@@ -4,17 +4,8 @@
     "subtitle": "A Python-based tool to optimize risk and entropy",
     "image": "https://placehold.co/300x180",
     "link": "https://your-app-link.com",
-    "date": "2025-06-01",
-    "tags": ["python", "risk", "optimization"],
-    "starred": true
-  },
-  {
-    "title": "Quant Dashboard",
-    "subtitle": "Market signals visualized using D3.js",
-    "image": "https://placehold.co/300x180",
-    "link": "https://github.com/yourname/quant-dashboard",
-    "date": "2025-05-01",
-    "tags": ["python", "risk", "optimization"],
+    "date": "2025-06-12",
+    "tags": ["python", "optimization"],
     "starred": true
   }
 ]
