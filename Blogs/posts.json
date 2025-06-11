@@ -2,7 +2,7 @@
   {
     "title": "Damned",
     "filename": "damned.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/damned.png",
     "date": "2020-02-21",
     "tags": [
       "fiction",
@@ -12,7 +12,7 @@
   {
     "title": "Adriel",
     "filename": "adriel.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/adriel.png",
     "date": "2020-02-21",
     "tags": [
       "fiction",
@@ -22,7 +22,7 @@
   {
     "title": "My new favourite piece.",
     "filename": "my-new-favourite-piece.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/new_piece.jpg",
     "date": "2020-02-23",
     "tags": [
       "classical music",
@@ -32,7 +32,7 @@
   {
     "title": "The blue reaping",
     "filename": "the-blue-reaping.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/the_blue_reaping.png",
     "date": "2020-03-17",
     "tags": [
       "fiction",
@@ -42,7 +42,7 @@
   {
     "title": "The Hue of A Beach",
     "filename": "the-hue-of-a-beach.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/hue_of_a_beach.png",
     "date": "2021-04-18",
     "tags": [
       "fiction",
@@ -51,7 +51,7 @@
   {
     "title": "Notes on \"How to Escape Education's Death Valley\"",
     "filename": "notes-on-how-to-escape-educations-death-valley.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/escape_education_death_valley.jpg",
     "date": "2021-04-18",
     "tags": [
       "educational",
@@ -61,7 +61,7 @@
   {
     "title": "Russian Roulette",
     "filename": "russian-roulette.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/russian_roulette.jpg",
     "date": "2021-04-18",
     "tags": [
       "fiction",
@@ -70,7 +70,7 @@
   {
     "title": "A Delivery in Knox",
     "filename": "a-delivery-in-knox.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/a_delivery_in_knox.png",
     "date": "2021-04-18",
     "tags": [
       "fiction",
@@ -79,7 +79,7 @@
   {
     "title": "A Christmas Hunt",
     "filename": "a-christmas-hunt.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/a_christmas_hunt.png",
     "date": "2021-04-18",
     "tags": [
       "fiction",
@@ -88,7 +88,7 @@
   {
     "title": "A passion to kill",
     "filename": "a-passion-to-kill.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/a_passion_to_kill.webp",
     "date": "2021-05-22",
     "tags": [      "fiction",
       "writing"
@@ -96,8 +96,8 @@
   },
   {
     "title": "Austrian business cycle theory - An introduction",
-    "filename": "austrian-business-cycle-theory---an-introduction.md",
-    "image": "https://placehold.co/300x180",
+    "filename": "austrian-business-cycle-theory-an-introduction.md",
+    "image": "Assets/austrian_business_cycle_theory.jpg",
     "date": "2021-09-06",
     "tags": [
       "economics",
@@ -107,7 +107,7 @@
   {
     "title": "A short history of the Austrian School of Economics",
     "filename": "a-short-history-of-the-austrian-school-of-economics.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/short_history_of_austrian_economics.png",
     "date": "2021-09-17",
     "tags": [
             "economics",
@@ -116,8 +116,8 @@
   },
   {
     "title": "Rittenhouse - A sigh of relief for freedom",
-    "filename": "rittenhouse---a-sigh-of-relief-for-freedom.md",
-    "image": "https://placehold.co/300x180",
+    "filename": "rittenhouse-a-sigh-of-relief-for-freedom.md",
+    "image": "Assets/rittenhouse_a_sigh_of_relief_for_freedom.jpg",
     "date": "2021-12-13",
     "tags": [
             "economics",
@@ -126,7 +126,7 @@
   {
     "title": "Why Microsoft has the home advantage in the battle for the 'Metaverse'",
     "filename": "why-microsoft-has-the-home-advantage-in-the-battle-for-the-metaverse.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/why_microsoft_has_the_home_advantage_in_the_battle_for_the_metaeverse.jpg",
     "date": "2022-03-13",
     "tags": [
       "opinion",
@@ -136,7 +136,7 @@
   {
     "title": "Ashneer Grover Vs BharatPe: PR Lessons for Startups",
     "filename": "ashneer-grover-vs-bharatpe-pr-lessons-for-startups.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/ashneer_grover_vs_bharat_pe_a_pr_lesson_for_startups.jpg",
     "date": "2022-04-09",
     "tags": [
       "opinion",
@@ -146,7 +146,7 @@
   {
     "title": "Why brand building is important for startups",
     "filename": "why-brand-building-is-important-for-startups.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/why_brand_building_is_important_for_startups.jpg",
     "date": "2022-04-14",
     "tags": [
       "opinion",
@@ -155,7 +155,7 @@
   {
     "title": "Inflation in the US: A Report",
     "filename": "inflation-in-the-us-a-report.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/inflation_in_the_us_a_report.jpg",
     "date": "2022-11-07",
     "tags": [
       "report",
@@ -165,7 +165,7 @@
   {
     "title": "Bonds and Yields to Maturity",
     "filename": "bonds-and-yields-to-maturity.md",
-    "image": "https://placehold.co/300x180",
+    "image": "Assets/bond_and_yields_to_maturity.jpeg",
     "date": "2023-07-20",
     "tags": [
       "finance",

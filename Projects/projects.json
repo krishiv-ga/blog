@@ -1,8 +1,8 @@
 [
   {
     "title": "Smart Portfolio Optimizer",
-    "subtitle": "A Python-based tool to optimize risk and entropy",
-    "image": "https://placehold.co/300x180",
+    "subtitle": "A Python-based tool to optimize sharpe ratio for portfolios by changing weights.",
+    "image": "Assets/work_in_progress.webp",
     "link": "https://your-app-link.com",
     "date": "2025-06-12",
     "tags": ["python", "optimization"],

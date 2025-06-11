@@ -735,3 +735,90 @@ nav a {
 #resume-snapshot .project-card {
   margin-bottom: 0;
 }
+
+/* =====================================================
+   BLOG POST VIEW (post.html)
+===================================================== */
+
+.markdown {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  line-height: 1.75;
+  text-align: left;
+  color: #ddd;
+}
+
+.markdown h1, .markdown h2, .markdown h3 {
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+.markdown p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.markdown em {
+  color: #34d399;
+  font-style: italic;
+}
+
+.markdown a {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+.markdown a:hover {
+  color: #34d399;
+}
+
+.markdown ul,
+.markdown ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+}
+
+.markdown code {
+  background-color: #1e1e1e;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #f1fa8c;
+}
+
+.markdown pre code {
+  display: block;
+  padding: 1rem;
+  overflow-x: auto;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.markdown h1:first-of-type {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.markdown em:first-of-type {
+  display: block;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+}
