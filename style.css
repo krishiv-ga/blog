@@ -156,3 +156,73 @@ button:hover {
 .resume li {
   margin-bottom: 0.5rem;
 }
+
+/* Hero Section */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: #34d399;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Call-to-action buttons inside Hero */
+.cta-buttons .button {
+  margin: 0.4rem;
+}
+
+/* Section titles and spacing */
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Blog Preview Placeholder */
+.blog-preview p,
+.projects-preview p,
+.resume-preview p,
+.resume-preview ul {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* Resume Preview List */
+.resume-preview ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.resume-preview li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer spacing */
+footer {
+  margin-top: 4rem;
+}
