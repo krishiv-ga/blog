@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Smart Portfolio Optimizer",
+    "subtitle": "A Python-based tool to optimize risk and entropy",
+    "image": "https://via.placeholder.com/300x180?text=Portfolio+Optimizer",
+    "link": "https://your-portfolio-app.com"
+  },
+  {
+    "title": "Quant Dashboard",
+    "subtitle": "Market signals and indicators visualized with D3.js",
+    "image": "https://via.placeholder.com/300x180?text=Quant+Dashboard",
+    "link": "https://github.com/yourname/quant-dashboard"
+  }
+]

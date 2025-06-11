@@ -18,34 +18,32 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container">
-      <section id="projects">
-        <h1>My Projects</h1>
-        <div class="project-grid">
-          
-          <!-- Project Card -->
-          <div class="project-card">
-            <img src="images/project1.png" alt="Project 1 Preview" />
-            <h2>Smart Portfolio Optimizer</h2>
-            <p>A Python-based tool for optimizing portfolios using risk and entropy constraints.</p>
-            <a href="https://yourprojectlink.com" target="_blank">View Project</a>
-          </div>
+<main>
+  <div class="container">
+    <h1>Projects</h1>
+    <div id="projects-grid" class="project-grid"></div>
+  </div>
+</main>
 
-          <!-- Another Project Card -->
-          <div class="project-card">
-            <img src="images/project2.png" alt="Project 2 Preview" />
-            <h2>Quant Research Dashboard</h2>
-            <p>Interactive visualizations of market signals using D3.js and historical data.</p>
-            <a href="https://yourproject2link.com" target="_blank">View Project</a>
-          </div>
+<script>
+  fetch('Projects/projects.json')
+    .then(response => response.json())
+    .then(projects => {
+      const container = document.getElementById("projects-grid");
+      projects.forEach(project => {
+        const card = `
+          <a href="${project.link}" target="_blank" class="project-card-link">
+            <div class="project-card">
+              <img src="${project.image}" alt="${project.title}">
+              <h2>${project.title}</h2>
+              <p>${project.subtitle}</p>
+            </div>
+          </a>`;
+        container.innerHTML += card;
+      });
+    });
+</script>
 
-          <!-- More cards will go here -->
-
-        </div>
-      </section>
-    </div>
-  </main>
 
   <footer>
     <p>&copy; 2025 Your Name. All rights reserved.</p>

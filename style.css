@@ -281,3 +281,17 @@ footer {
 #searchInput::placeholder {
   color: #888;
 }
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card-link:hover .project-card {
+  transform: translateY(-5px);
+}
