@@ -2,8 +2,6 @@
 
 *Published: 2022-11-07*
 
-Note: This article contains images. Due to a bug with GitHub markdown image pathing, images are currently not supported. Sorry for the inconvienence.  
-
 Inflation is the rise of general price levels. It can have severe consequences for the economy, devastating short term growth and harming the potential of long term development. Rising prices can lead to increased unemployment as production costs shoot up and employers lay off workers to maintain margins. They can result in a worsening of the influence of the nation in international markets as the national product becomes less competitive with increased prices. Most importantly, rising prices can lead to poverty as people can afford less with the same income resulting in a lower standard of living.
 
 !["Figure 1"](Assets/inflation_in_the_us_a_report_figure_1.png)

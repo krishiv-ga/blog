@@ -2,8 +2,6 @@
 
 *Published: 2021-09-06*
 
-Note: This article contains images. Due to a bug with GitHub markdown image pathing, images are currently not supported. Sorry for the inconvienence.  
-
 The Austrian School of Economics is a group of Economists that believe in laissez-faire capitalism. They have a business cycle theory which is called the Austrian Business Cycle theory. Before we get into the topic at hand, we need to preface this idea by understanding what business cycles are.
 
 A business cycle is an economic theory which attempts to explain the patterns of economic growth and recession in an economy. The Austrian business cycle theory says that the periodic recessions and booms are due to the government interfering with the rate of interest. It says that the rate of interest is the ‘coordinating function between time and investments’ which is just big words for, it is a way to tell what kind of investments entrepreneurs and investors should make.

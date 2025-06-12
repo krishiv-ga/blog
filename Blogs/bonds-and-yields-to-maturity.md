@@ -2,8 +2,6 @@
 
 *Published: 2023-07-20*
 
-Note: This article contains images. Due to a bug with GitHub markdown image pathing, images are currently not supported. Sorry for the inconvienence.  
-
 Bond markets are a key part of anyone’s portfolio- and currently they’re creating a buzz on Wall Street. After years of severely underperforming, bonds are back to being a great bang for your buck. During my first week at Motilal Oswal, I covered bonds, their yields and their yield curves to better understand why they are a core asset in fixed income portfolios, the project title of my internship. I’ve penned this article as a exercise on my own understanding and possibly a useful reference for anyone interested. Thanks for taking your time to read it!
 
 ---
